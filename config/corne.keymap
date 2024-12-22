@@ -16,6 +16,11 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
+
+        right_shift {
+            bindings = <&kp RIGHT_SHIFT>;
+            key-positions = <35 41 41>;
+        };
     };
 
     behaviors {
