@@ -12,16 +12,9 @@
         compatible = "zmk,combos";
 
         combo_esc {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
-        };
-
-        right_shift {
-            bindings = <&kp RIGHT_SHIFT>;
-            key-positions = <35 41 41>;
-            layers = <0>;
-            timeout-ms = <50>;
         };
     };
 
@@ -65,10 +58,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I              &kp O    &kp P     &kp BSPC
-&kp RIGHT_ALT  &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K              &kp L    &kp SEMI  &kp SQT
-&kp LSHFT      &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA          &kp DOT  &kp FSLH  &kp ESC
-                             &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RIGHT_CONTROL
+&kp TAB        &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y      &kp U  &kp I              &kp O    &kp P     &kp BSPC
+&kp RIGHT_ALT  &kp A  &kp S  &kp D     &kp F  &kp G        &kp H      &kp J  &kp K              &kp L    &kp SEMI  &kp SQT
+&kp LSHFT      &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N      &kp M  &kp COMMA          &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                             &kp LGUI  &mo 1  &kp SPACE    &kp ENTER  &mo 2  &kp RIGHT_CONTROL
             >;
         };
 
@@ -80,10 +73,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp N1  &kp N2  &kp N3    &kp N4  &kp N5       &kp N6    &kp N7    &kp N8    &kp N9     &kp N0          &kp BSPC
-&trans     &trans  &trans  &trans    &trans  &trans       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans          &trans
-&kp LSHFT  &trans  &trans  &trans    &trans  &trans       &trans    &trans    &trans    &kp LANG2  &kp LANGUAGE_1  &kp GLOBE
-                           &kp LGUI  &trans  &kp SPACE    &kp RET   &trans    &kp RALT
+&kp ESCAPE    &trans  &trans  &trans    &trans  &trans       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3       &kp NUMBER_4  &kp N5  &kp BSPC
+&kp LEFT_ALT  &trans  &trans  &trans    &trans  &trans       &kp NUMBER_6  &kp N7        &kp N8             &kp N9        &kp N0  &trans
+&kp LSHFT     &trans  &trans  &trans    &trans  &trans       &trans        &trans        &trans             &trans        &trans  &kp RIGHT_SHIFT
+                              &kp LGUI  &trans  &kp SPACE    &kp RET       &trans        &kp RIGHT_CONTROL
             >;
         };
 
@@ -95,10 +88,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL        &kp AT    &kp HASH  &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK  &kp BSPC
-&kp LCTRL  &kp UNDERSCORE  &kp PLUS  &kp PIPE  &kp COLON  &kp TILDE    &kp MINUS  &kp EQUAL  &kp LBKT              &kp RBKT               &kp BSLH      &kp GRAVE
-&kp LSHFT  &trans          &trans    &trans    &trans     &trans       &trans     &trans     &kp LBRC              &kp RBRC               &trans        &trans
-                                     &kp LGUI  &trans     &kp SPACE    &kp RET    &trans     &kp RALT
+&kp ESCAPE    &kp EXCL  &kp AT  &kp HASH  &kp DLLR        &kp PRCNT    &kp CARET             &kp AMPS   &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSPC
+&kp LEFT_ALT  &trans    &trans  &trans    &kp MINUS       &trans       &kp SLASH             &kp EQUAL  &kp GRAVE          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE
+&kp LSHFT     &trans    &trans  &trans    &kp UNDERSCORE  &trans       &kp NON_US_BACKSLASH  &kp PLUS   &kp TILDE          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
+                                &kp LGUI  &trans          &kp SPACE    &kp RET               &trans     &kp RIGHT_CONTROL
             >;
         };
     };
